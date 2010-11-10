@@ -1,0 +1,40 @@
+REQUIREMENTS:
+
+ * Apache 2+ Web server configured with MultiViews
+
+ * PHP5 with iMagick/GD support
+
+INSTALLATION:
+
+ 1. Place the script on your server (perhaps under your usual graphics or images
+		folder).
+
+ 2. Edit settings in difonts.php to your liking and create as many presets as
+    you want by duplicating options with differing names in []'s after the variables.
+
+ 3. (Optional but highly reccomended) If caching is on (default) then create a
+    folder named "cache" in the same folder as difonts.php and chmod it 777.
+
+ 4. Open http://yoursite.com/images/difonts/preset/sometexthere.png and verify
+    everything is happy.
+
+ 5. Format all the headers on your site to use diFonts images with alt-text
+    instead of just text or use the included diFonts function.
+
+NOTES:
+
+ diFonts function syntax is as follows:
+
+   <?php diFonts('Your Text Here','Preset','Optional Title Text') ?>
+
+	Where "Preset" is whatever is in []'s after a block of options in difonts.
+
+
+ Example usage in a title section of a WordPress template:
+
+   <?php require_once('path/to/difonts.php') ?>
+	 <h2><a href="<?php the_permalink(); ?>"><?php diFonts(the_title()','h2') ?>
+	 </a></h2>
+
+diBlog supports diFonts out of the box, just simpily turn it on and tell it
+where difonts.php is located :-).

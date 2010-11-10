@@ -1,0 +1,34 @@
+	diFonts 0.9 <http://sourceforge.net/projects/difonts/>
+
+WHAT IS DIFONTS?
+
+  A PHP script that takes a URL linking to "any text here.png" and creates an
+  image of that text on first access. You can customize the font, shadow,
+  size, etc. of all images and modify them at any time. Ideal for blog post
+  titles, headings, buttons, etc.
+
+CURRENT FEATURES:
+
+ * The ability to specify and use any TTF font file on the web.
+
+ * Size, max-length, and drop-shadow all easily customizable.
+
+ * Ability to create multiple "presets" each with its own customizations.
+
+ * Includes optional custom PHP function to automatically generate W3C
+   standards compliant HTML for you with proper alt tags and fall-back.
+
+ * Included function automatically reformats HTML outputted IE6 to
+   allow PNG transparency.
+
+ * Optional caching support so the same exact image is never generated twice.
+
+ * No Flash, JavaScript, or special browser font embed hackery required.
+
+NOTES
+
+  Working demo of latest release should be available at:
+
+	http://difonts.sourceforge.net
+
+  See INSTALL file for up-to-date requirements and installation instructions.
